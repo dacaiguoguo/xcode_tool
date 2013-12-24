@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yg_viewmake</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIView *&lt;#viewName#&gt; = ({
+        CGRect rect = {.origin.x=&lt;#x#&gt;, .origin.y=&lt;#y#&gt;,.size.width=&lt;#width#&gt;,.size.height=&lt;#height#&gt;};
+        UIView *thisView = [[UIView alloc] initWithFrame:rect];
+        [thisView setBackgroundColor:[UIColor clearColor]];
+        thisView;
+    });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7A927B51-2B47-45AB-994D-4736CCF87B17</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>creat view</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>yg_makeview</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
