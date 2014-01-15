@@ -3,24 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>yg_simulator</string>
+	<string>yg_mobclick</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#if TARGET_IPHONE_SIMULATOR
-#warning test by dacaiguoguo
-    &lt;#code#&gt;
-#endif</string>
+	<string>    [MobClick event:@"&lt;#string#&gt;"];
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>74E4E2F4-57EB-46EC-8609-4EC1F3ABC7C3</string>
+	<string>531B8531-D578-44BA-8D96-6A24014CB9EE</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>yg_simulator</string>
+	<string>yg_mobclick</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>yg_simulator</string>
+	<string>yg_mobclick</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
