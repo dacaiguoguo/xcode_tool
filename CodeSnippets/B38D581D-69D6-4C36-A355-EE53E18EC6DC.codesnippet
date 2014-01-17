@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yg_label</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        deductionLabel = ({
+            CGRect rect = {.origin.x=0, .origin.y=1,.size.width=15,.size.height=14};
+            UILabel *thisView = [[UILabel alloc] initWithFrame:rect];
+            thisView.font = [CommonFunction defaultFontWithSize:SIX_FONT];
+            thisView.textColor = [UIColor whiteColor];
+            [thisView setBackgroundColor:[UIColor clearColor]];
+            thisView.text = @"抵";
+            thisView.textAlignment = UITextAlignmentCenter;
+            thisView;
+        });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B38D581D-69D6-4C36-A355-EE53E18EC6DC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>yg_label</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
