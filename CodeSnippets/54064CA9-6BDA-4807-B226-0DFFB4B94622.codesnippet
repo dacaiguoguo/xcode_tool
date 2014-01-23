@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yg_method_ setRoundedCornersByCAShapeLayer</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>void setRoundedCornersByCAShapeLayer(UIView* thisView,CGFloat radius,UIRectCorner corners){
+    CAShapeLayer *styleLayer = [CAShapeLayer layer];
+    UIBezierPath *shadowPath = [UIBezierPath bezierPathWithRoundedRect:thisView.bounds
+                                                     byRoundingCorners:corners
+                                                           cornerRadii:CGSizeMake(radius, radius)];
+    styleLayer.path = shadowPath.CGPath;
+    thisView.layer.mask = styleLayer;
+    thisView.layer.masksToBounds = YES;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>54064CA9-6BDA-4807-B226-0DFFB4B94622</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>setRoundedCornersByCAShapeLayer</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>yg_method_ setRoundedCornersByCAShapeLayer</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
