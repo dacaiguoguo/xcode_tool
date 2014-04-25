@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yg_define_lvlog</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#ifdef DEBUG
+#define LVLog(format, ...) NSLog(format, ## __VA_ARGS__)
+#else
+#define LVLog(format, ...) //NSLog(format, ## __VA_ARGS__)
+#endif</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D20B8A25-3369-4A31-84F6-FCF0463DB43F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>custom NSLog</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>yg_define_lvlog</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
