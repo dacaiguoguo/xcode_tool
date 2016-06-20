@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>yg_webview_point_view</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (IBAction)tapCellAction:(UIButton *)sender {
+    CGPoint point = CGPointZero;
+    float a = 10;
+    while (a &lt; 3000) {
+        point = CGPointMake(100, a);
+        NSString *tagNameJS = [NSString stringWithFormat:@"document.elementFromPoint(%f, %f).tagName", point.x, point.y];
+        NSString *tagName = [self.aWebView stringByEvaluatingJavaScriptFromString:tagNameJS];
+        
+        if ([[tagName lowercaseString] isEqualToString:@"img"]) {
+            NSString *imgUrlJS = [NSString stringWithFormat:@"document.elementFromPoint(%f, %f).src", point.x, point.y];
+            NSString *imageUrl = [self.aWebView stringByEvaluatingJavaScriptFromString:imgUrlJS];
+            NSLog(@"image url=%@ point %@", imageUrl,  NSStringFromCGPoint(point));
+        } else {
+            NSLog(@"tagName=%@ point %@", tagName, NSStringFromCGPoint(point));
+        }
+        a+=10;
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C829C508-9877-4CF3-96A5-D980D550178B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>yg_webview_point_view</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>yg_webview_point_view</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
